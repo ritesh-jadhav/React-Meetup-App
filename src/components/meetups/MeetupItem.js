@@ -1,6 +1,8 @@
+import Card from '../UI/Card';
 import classes from './MeetupItem.module.css';
 const MeetupItem = (props) => {
 return <li className={classes.item}>
+    <Card>
     <div className={classes.image}>
         <img src={props.image} alt={props.title} />
     </div>
@@ -12,6 +14,7 @@ return <li className={classes.item}>
     <div className={classes.actions}>
         <button>To favourites</button>
     </div>
+    </Card>
 </li>
 };
 
